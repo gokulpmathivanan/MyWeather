@@ -1,0 +1,7 @@
+services:
+  myweather:
+    build: .
+    container_name: myweather
+    restart: unless-stopped
+    ports:
+      - "8600:8000"
